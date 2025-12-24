@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidhi Tanwar — Software Engineer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <span class="logo">VT</span>
+      <nav>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid glass">
+
+      <div class="hero-text hero-text-centered">
+        <h1>
+          Where data, code, and common sense meet —<br />
+          ideally before 3 AM.
+        </h1>
+
+        <p class="hero-sub">
+          Software Engineer who cares about clarity, systems, and things not breaking.
+        </p>
+
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Work</a>
+          <a href="#contact" class="btn secondary">Contact</a>
+        </div>
+
+        <p class="micro-line">
+          I like systems that don’t wake you up at night.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Professional portrait of Vidhi Tanwar">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+
+      <h2>Experience</h2>
+
+      <div class="experience-hero glass">
+
+        <div class="experience-text">
+          <h3>Junior Development Intern</h3>
+          <p class="meta">National Informatics Centre (NIC)</p>
+
+          <div class="experience-block">
+            <span class="experience-label">What I worked on</span>
+            <ul>
+              <li>Contributed to internal government applications through feature development and debugging.</li>
+              <li>Worked within structured workflows, understanding real-world constraints and dependencies.</li>
+              <li>Handled code changes with emphasis on clarity, maintainability, and correctness.</li>
+            </ul>
+          </div>
+
+          <div class="experience-block">
+            <span class="experience-label">Why it mattered</span>
+            <p class="experience-impact">
+              This experience shifted my mindset from writing code that “works”
+              to building software that remains reliable, readable, and scalable
+              in production environments.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-image">
+          <img src="assets/nic-office.jpg" alt="NIC office workspace">
+        </div>
+
+      </div>
+
+      <p class="micro-line">
+        This is where theory met constraints.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <div class="section-inner glass">
+      <h2>Skills</h2>
+
+      <div class="skills-grid six">
+
+        <div class="skill-card">
+          <span class="icon">⌘</span>
+          <h3>Languages</h3>
+          <p>C++ · Python · JavaScript · SQL</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="icon">⧉</span>
+          <h3>Core CS</h3>
+          <p>Data Structures · Algorithms · OOP · DBMS</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="icon">⬡</span>
+          <h3>Backend</h3>
+          <p>REST APIs · Node.js · PostgreSQL</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="icon">◎</span>
+          <h3>AI / ML</h3>
+          <p>CNNs · Computer Vision · Model Evaluation</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="icon">⚙︎</span>
+          <h3>Tools</h3>
+          <p>Git · Linux (Ubuntu) · VS Code</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="icon">✓</span>
+          <h3>Engineering</h3>
+          <p>Debugging · Code Quality · Problem Solving</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2>Selected Work</h2>
+
+      <div class="project-showcase reveal ">
+        <div class="project-info">
+          <h3>Brain Tumor Detection System</h3>
+          <p class="meta">Python · CNN · Medical Imaging</p>
+          <p>
+            Designed and trained a convolutional neural network to classify MRI scans,
+            focusing on preprocessing and minimizing false negatives.
+          </p>
+          <p class="impact highlight">
+            Built a reproducible ML pipeline with strong validation accuracy.
+          </p>
+        </div>
+        <div class="project-visual">
+          <img src="assets/tumor-project.jpg" alt="Brain tumor detection pipeline">
+        </div>
+      </div>
+
+      <div class="project-showcase reveal alt">
+        <div class="project-info">
+          <h3>AI-Based Online Proctoring System</h3>
+          <p class="meta">Computer Vision · Python · ML</p>
+          <p>
+            Developed a real-time proctoring system using face detection and gaze tracking.
+          </p>
+          <p class="impact highlight">
+            Reduced manual monitoring and improved exam integrity.
+          </p>
+        </div>
+        <div class="project-visual">
+          <img src="assets/proctoring-project.jpg" alt="Online proctoring system">
+        </div>
+      </div>
+
+      <div class="project-showcase reveal">
+        <div class="project-info">
+          <h3>Hand Gesture Recognition for Volume Control</h3>
+          <p class="meta">OpenCV · Python · HCI</p>
+          <p>
+            Implemented touchless volume control using hand landmark detection.
+          </p>
+          <p class="impact highlight">
+            Low-latency, hardware-independent interaction system.
+          </p>
+        </div>
+        <div class="project-visual">
+          <img src="assets/gesture-project.jpg" alt="Hand gesture recognition">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="section philosophy">
+    <div class="section-inner glass soft center">
+      <h2>Engineering Philosophy</h2>
+      <p>
+        I value clarity over cleverness, systems over shortcuts,
+        and software that remains readable long after it’s written.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner glass soft center">
+
+      <h2>Contact</h2>
+
+      <p>
+        Interested in software engineering and data-focused roles.<br />
+        Always open to meaningful conversations and new opportunities.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:vidhitanwar30@gmail.com" class="contact-item primary">
+          <span class="contact-icon">✉</span>
+          <span>Email</span>
+        </a>
+
+        <a href="https://github.com/vidhitanwar" target="_blank" class="contact-item">
+          <span class="contact-icon">⌘</span>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/vidhitanwar30" target="_blank" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <p class="micro-line">
+        If you care about clarity, we’ll probably get along.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Vidhi Tanwar · Built with clarity and intent</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>

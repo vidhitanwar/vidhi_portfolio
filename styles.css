@@ -1,0 +1,423 @@
+/* ===============================
+   ROOT VARIABLES
+================================ */
+:root {
+  --bg: #0b0d10;
+  --card: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.15);
+  --text: #eaeaea;
+  --muted: #9ca3af;
+  --accent: #9FB8A0;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAV
+================================ */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  color: var(--muted);
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ===============================
+   HERO
+================================ */
+.hero {
+  min-height: 100vh;
+  padding: 7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-grid {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text-centered {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.hero-sub {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.micro-line {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  filter: grayscale(100%) contrast(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  object-fit: cover;
+}
+
+/* ===============================
+   GLASS
+================================ */
+.glass {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+}
+
+.glass.soft {
+  background: rgba(255,255,255,0.12);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.primary {
+  background: white;
+  color: black;
+}
+
+.secondary {
+  border: 1px solid var(--border);
+  color: white;
+  margin-left: 1rem;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.section {
+  padding: 5rem 2rem;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===============================
+   SKILLS
+================================ */
+.skills-grid.six {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skill-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  max-width: 260px;
+  text-align: center;
+}
+
+.skill-card .icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+/* ===============================
+   EXPERIENCE
+================================ */
+.experience-hero {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.experience-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  filter: grayscale(100%) contrast(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  object-fit: cover;
+}
+
+.experience-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: rgba(255,255,255,0.6);
+}
+
+.experience-block {
+  margin-top: 1.4rem;
+}
+
+.experience-block ul {
+  padding-left: 1.2rem;
+}
+
+.experience-block li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   PROJECTS – FINAL SAFE
+================================ */
+.project-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.project-info {
+  order: 1;
+}
+
+.project-visual {
+  order: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.project-visual img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 18px;
+  filter: grayscale(100%) contrast(1.05);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+
+/* Alternate ONLY for 2nd project */
+.project-showcase.alt .project-info {
+  order: 2;
+}
+
+.project-showcase.alt .project-visual {
+  order: 1;
+}
+
+.impact.highlight {
+  margin-top: 1.2rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  font-weight: 500;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+.center {
+  text-align: center;
+}
+
+.contact-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.04);
+}
+
+.contact-item.primary {
+  background: white;
+  color: black;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 900px) {
+  .hero-grid,
+  .experience-hero,
+  .project-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info {
+    order: 1;
+  }
+
+  .project-visual {
+    order: 2;
+  }
+
+  .project-visual img {
+    margin-top: 2rem;
+  }
+
+  .skills-grid.six {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.3px;
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-visual img {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.project-visual img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 50px 100px rgba(0,0,0,0.65);
+}
+
+.skill-card,
+.experience-hero,
+.glass {
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.skill-card:hover,
+.experience-hero:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.55);
+}
+
+.btn {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.hero-image img {
+  transition: transform 400ms ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Reduce space after Projects section */
+#projects {
+  padding-bottom: 2rem;
+}
+
+/* ENGINEERING PHILOSOPHY – VISUAL SEPARATOR */
+/* FORCE PHILOSOPHY VISIBILITY */
+.philosophy {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.philosophy h2 {
+  margin-bottom: 1rem;
+}
+
+.philosophy p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.9);
+}
